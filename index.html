@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Proyecto académico sobre telemática, redes informáticas, Internet, protocolos y arquitectura de red." />
+  <meta name="theme-color" content="#07111f" />
+  <title>NEXUS · Telemática & Redes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grid-noise" aria-hidden="true"></div>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>NEXUS <b>/</b> TELEMATICS</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#conceptos">Conceptos</a>
+      <a href="#redes">Redes</a>
+      <a href="#funcionamiento">Funcionamiento</a>
+      <a href="#arquitectura">Arquitectura</a>
+      <a href="#unidad2">Unidad 2</a>
+      <a href="#biografia">Biografía</a>
+      <a href="#referencias">Referencias</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <canvas id="networkCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span></span> Unidades Temáticas 1 y 2 · Proyecto Web</div>
+        <h1>
+          <span>TELEMÁTICA</span>
+          <em>&amp; REDES</em>
+        </h1>
+        <p class="hero-lede">
+          Un recorrido visual por la infraestructura invisible que conecta personas,
+          dispositivos, servicios y conocimiento en Internet.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#conceptos">Explorar el proyecto <span>↘</span></a>
+          <a class="btn btn-ghost" href="#referencias">Ver fuentes académicas</a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <small>RESPONSABLE</small>
+            <strong data-responsible>Moisés de Jesús Pérez Pinto</strong>
+          </div>
+          <div>
+            <small>ASIGNATURA</small>
+            <strong>Telemática Educativa</strong>
+          </div>
+          <div>
+            <small>PROFESOR</small>
+            <strong>Manuel Rodríguez</strong>
+          </div>
+          <div>
+            <small>ENTREGA</small>
+            <strong>04 · OCT</strong>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-panel glass reveal delay-1" aria-label="Resumen del proyecto">
+        <div class="panel-head">
+          <span>NETWORK / OVERVIEW</span>
+          <span class="status"><i></i> ONLINE</span>
+        </div>
+        <div class="orbital">
+          <div class="orbit orbit-1"><span></span></div>
+          <div class="orbit orbit-2"><span></span></div>
+          <div class="orbit orbit-3"><span></span></div>
+          <div class="core">TCP/IP</div>
+        </div>
+        <div class="mini-stats">
+          <div><b>09</b><span>conceptos clave</span></div>
+          <div><b>04</b><span>escalas de red</span></div>
+          <div><b>06</b><span>nodos de viaje</span></div>
+        </div>
+      </aside>
+
+      <a class="scroll-cue" href="#conceptos" aria-label="Bajar a conceptos">
+        <span>SCROLL</span><i></i>
+      </a>
+    </section>
+
+    <section class="section intro-strip">
+      <div class="section-index">01</div>
+      <div class="intro-copy reveal">
+        <span class="kicker">BASE CONCEPTUAL</span>
+        <h2>Conectar no es solo enlazar cables.<br><span>Es coordinar información.</span></h2>
+        <p>
+          La Guía 2 presenta la telemática como la convergencia entre telecomunicaciones
+          e informática: transmitir información y tratarla mediante sistemas computacionales.
+          Clares López (2000) la describe como un conjunto de técnicas y servicios donde
+          intervienen ambas áreas.
+        </p>
+      </div>
+      <div class="source-chip reveal">
+        <span>FUENTES BASE</span>
+        <b>Clares López, 2000</b>
+        <b>Guía 2 · Redes informáticas y telemáticas</b>
+      </div>
+    </section>
+
+    <section class="section" id="conceptos">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">01 · CONCEPTOS</span>
+          <h2>El vocabulario de una<br><em>sociedad conectada.</em></h2>
+        </div>
+        <p>
+          Nueve conceptos para comprender cómo interactúan personas,
+          aplicaciones, redes y servicios digitales.
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <article class="concept-card feature reveal">
+          <div class="card-top"><span>01</span><i class="pulse-dot"></i></div>
+          <h3>Telemática</h3>
+          <p>
+            Conjunto de técnicas y servicios donde convergen telecomunicaciones e informática.
+            Integra la transmisión de información con su procesamiento por sistemas computacionales.
+          </p>
+          <footer><span>Clares López (2000)</span><span>Guía 2</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>02</span><i>↔</i></div>
+          <h3>Medios interactivos</h3>
+          <p>
+            Medios digitales en los que el usuario puede actuar, responder o comunicarse
+            con otros participantes. En Internet esto se expresa en web, chat, foros,
+            videoconferencia y otras experiencias de interacción.
+          </p>
+          <footer><span>Síntesis basada en Clares López (2000)</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>03</span><i>⌁</i></div>
+          <h3>Red telemática</h3>
+          <p>
+            Infraestructura que conecta sistemas informáticos mediante medios de
+            telecomunicación para intercambiar datos, compartir recursos y prestar servicios.
+          </p>
+          <footer><span>Guía 2</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>04</span><i>●</i></div>
+          <h3>Usuario</h3>
+          <p>
+            Persona que accede a una red, aplicación o servicio y participa en procesos
+            de consulta, comunicación, creación o intercambio de información.
+          </p>
+          <footer><span>Síntesis conceptual</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>05</span><i>◎</i></div>
+          <h3>Grupos de interés</h3>
+          <p>
+            Comunidades formadas alrededor de temas, objetivos o necesidades compartidas.
+            En línea pueden organizarse mediante foros, grupos de discusión, listas,
+            chats o espacios colaborativos.
+          </p>
+          <footer><span>Clares López (2000)</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>06</span><i>✦</i></div>
+          <h3>Redes</h3>
+          <p>
+            Conjunto de equipos conectados que pueden compartir datos y recursos.
+            Su escala puede ir desde dos dispositivos hasta redes globales.
+          </p>
+          <footer><span>Guía 2</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>07</span><i>◉</i></div>
+          <h3>Internet</h3>
+          <p>
+            Red mundial de redes con acceso público. Hace posible servicios como la Web,
+            correo electrónico, transferencia de archivos, comunicación remota y grupos de debate.
+          </p>
+          <footer><span>Guía 2</span><span>Clares López (2000)</span></footer>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="card-top"><span>08</span><i>{ }</i></div>
+          <h3>Protocolos</h3>
+          <p>
+            Conjunto de reglas que permiten que emisor y receptor se comuniquen.
+            TCP/IP constituye la base de la comunicación en Internet.
+          </p>
+          <footer><span>Guía 2</span></footer>
+        </article>
+
+        <article class="concept-card feature reveal">
+          <div class="card-top"><span>09</span><i>WWW</i></div>
+          <h3>World Wide Web</h3>
+          <p>
+            Servicio de Internet basado en documentos y recursos enlazados mediante
+            hipertexto y contenido multimedia, consultados normalmente desde un navegador.
+          </p>
+          <footer><span>Clares López (2000)</span></footer>
+        </article>
+      </div>
+
+      <p class="editor-line">Responsable de la edición: <strong data-responsible>Moisés de Jesús Pérez Pinto</strong></p>
+    </section>
+
+    <section class="section network-section" id="redes">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">02 · INTRODUCCIÓN A LAS REDES</span>
+          <h2>De centímetros a continentes.</h2>
+        </div>
+        <p>
+          Una red cambia de escala, propósito y alcance, pero conserva el mismo principio:
+          dispositivos que intercambian información siguiendo reglas comunes.
+        </p>
+      </div>
+
+      <div class="network-explorer glass reveal">
+        <div class="network-tabs" role="tablist" aria-label="Tipos de red por cobertura">
+          <button class="network-tab active" data-network="pan" role="tab">PAN</button>
+          <button class="network-tab" data-network="lan" role="tab">LAN</button>
+          <button class="network-tab" data-network="man" role="tab">MAN</button>
+          <button class="network-tab" data-network="wan" role="tab">WAN</button>
+        </div>
+
+        <div class="network-stage">
+          <div class="network-visual" id="networkVisual">
+            <div class="net-ring r1"></div>
+            <div class="net-ring r2"></div>
+            <div class="net-ring r3"></div>
+            <span class="node n1">⌁</span><span class="node n2">▣</span>
+            <span class="node n3">◉</span><span class="node n4">◇</span>
+            <span class="node n5">▦</span><span class="node n6">◎</span>
+            <div class="net-core" id="netCore">PAN</div>
+          </div>
+
+          <div class="network-copy" id="networkCopy">
+            <span class="mono">PERSONAL AREA NETWORK</span>
+            <h3>Red de Área Personal</h3>
+            <p>Comunica dispositivos en un radio corto, por ejemplo un teléfono y un computador.</p>
+            <div class="network-data">
+              <div><small>ALCANCE</small><b>Pocos metros</b></div>
+              <div><small>ESCENARIO</small><b>Uso personal</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-cards">
+        <article class="info-card reveal">
+          <span class="tag">PRIVACIDAD / ACCESO</span>
+          <h3>Internet · Intranet · Extranet</h3>
+          <p>
+            La Guía 2 distingue Internet como red mundial pública; la intranet como red
+            privada que emplea herramientas de Internet dentro de una institución; y la
+            extranet como extensión controlada de esa red hacia usuarios externos.
+          </p>
+        </article>
+
+        <article class="info-card reveal">
+          <span class="tag">RELACIÓN FUNCIONAL</span>
+          <h3>Cliente-servidor · P2P</h3>
+          <p>
+            En el modelo cliente-servidor, los clientes consumen recursos o servicios
+            ofrecidos por servidores. En P2P, los dispositivos pueden actuar tanto como
+            clientes como servidores.
+          </p>
+        </article>
+      </div>
+
+      <div class="protocol-board reveal">
+        <div class="protocol-copy">
+          <span class="kicker">PROTOCOLOS</span>
+          <h3>Un idioma común para máquinas distintas.</h3>
+          <p>
+            Los protocolos definen cómo se estructura, envía, recibe y procesa la información.
+            La Guía 2 señala TCP/IP como el conjunto de protocolos de referencia para Internet.
+          </p>
+        </div>
+        <div class="protocol-stack" aria-label="Ejemplo conceptual de pila de protocolos">
+          <div><span>APLICACIÓN</span><b>HTTP · DNS · FTP · correo</b></div>
+          <div><span>TRANSPORTE</span><b>TCP / UDP</b></div>
+          <div><span>INTERNET</span><b>IP</b></div>
+          <div><span>ACCESO A RED</span><b>Ethernet · Wi‑Fi</b></div>
+        </div>
+      </div>
+
+      <p class="editor-line">Responsable de la edición: <strong data-responsible>Moisés de Jesús Pérez Pinto</strong></p>
+    </section>
+
+    <section class="section" id="funcionamiento">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">03 · FUNCIONAMIENTO</span>
+          <h2>¿Qué ocurre después de hacer <em>clic?</em></h2>
+        </div>
+        <p>
+          Internet es una cadena coordinada de resolución de nombres, protocolos,
+          enlaces, routers, servidores y aplicaciones.
+        </p>
+      </div>
+
+      <div class="packet-lab reveal">
+        <div class="packet-line" aria-hidden="true"><span class="packet"></span></div>
+
+        <article><span>01</span><i>⌨</i><h3>Solicitud</h3><p>El usuario introduce una dirección o activa un enlace.</p></article>
+        <article><span>02</span><i>DNS</i><h3>Resolución</h3><p>DNS asocia el nombre de dominio con una dirección IP.</p></article>
+        <article><span>03</span><i>⇄</i><h3>Paquetes</h3><p>La información se organiza para viajar a través de la red.</p></article>
+        <article><span>04</span><i>◇</i><h3>Enrutamiento</h3><p>Routers y gateways encaminan los datos entre redes.</p></article>
+        <article><span>05</span><i>▣</i><h3>Servidor</h3><p>El servidor procesa la solicitud y prepara una respuesta.</p></article>
+        <article><span>06</span><i>✓</i><h3>Respuesta</h3><p>El navegador recibe recursos y presenta la experiencia al usuario.</p></article>
+      </div>
+
+      <div class="services-heading reveal">
+        <span class="kicker">SERVICIOS Y HERRAMIENTAS</span>
+        <h3>La red como espacio de información, colaboración y comunicación.</h3>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <span>01</span><h4>Tiempo real</h4>
+          <p>Chat, videoconferencia y comunicación síncrona permiten interacción inmediata entre usuarios remotos.</p>
+          <small>Clares López (2000)</small>
+        </article>
+        <article class="service-card reveal">
+          <span>02</span><h4>World Wide Web</h4>
+          <p>Entorno hipertextual y multimedia que organiza recursos enlazados accesibles mediante navegadores.</p>
+          <small>Clares López (2000)</small>
+        </article>
+        <article class="service-card reveal">
+          <span>03</span><h4>Buscadores</h4>
+          <p>Sistemas que indexan recursos de la Web y permiten recuperarlos mediante consultas o palabras clave.</p>
+          <small>Complemento técnico</small>
+        </article>
+        <article class="service-card reveal">
+          <span>04</span><h4>Navegadores</h4>
+          <p>Aplicaciones cliente que solicitan, interpretan y presentan recursos web, habitualmente mediante HTTP/HTTPS.</p>
+          <small>Complemento técnico</small>
+        </article>
+        <article class="service-card reveal">
+          <span>05</span><h4>Traductores</h4>
+          <p>Servicios que transforman texto o contenido entre idiomas y facilitan el acceso multilingüe a información digital.</p>
+          <small>Complemento técnico</small>
+        </article>
+        <article class="service-card reveal">
+          <span>06</span><h4>Foros electrónicos</h4>
+          <p>Espacios de discusión generalmente asíncronos donde los participantes publican y responden mensajes por temas.</p>
+          <small>Clares López (2000)</small>
+        </article>
+        <article class="service-card reveal">
+          <span>07</span><h4>Telnet</h4>
+          <p>Servicio histórico de conexión remota que permite trabajar en otro computador a través de una sesión de terminal.</p>
+          <small>Clares López (2000)</small>
+        </article>
+        <article class="service-card internet2 reveal">
+          <span>08</span><h4>Internet2</h4>
+          <p>
+            Infraestructura avanzada orientada a investigación y educación, diseñada para
+            colaboración científica y necesidades intensivas de datos.
+          </p>
+          <small>Internet2 Network · fuente complementaria oficial</small>
+        </article>
+      </div>
+
+      <p class="editor-line">Responsable de la edición: <strong data-responsible>Moisés de Jesús Pérez Pinto</strong></p>
+    </section>
+
+    <section class="section architecture" id="arquitectura">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">04 · ESTRUCTURA</span>
+          <h2>La arquitectura que sostiene Internet.</h2>
+        </div>
+        <p>
+          Hardware, software y medios físicos trabajan juntos para que una red
+          pueda transportar, dirigir, proteger y presentar información.
+        </p>
+      </div>
+
+      <div class="architecture-triad reveal">
+        <article>
+          <span>H</span>
+          <div><small>CAPA 01</small><h3>Hardware</h3>
+          <p>Equipos terminales, tarjetas de red, routers, switches, puntos de acceso y servidores.</p></div>
+        </article>
+        <article>
+          <span>S</span>
+          <div><small>CAPA 02</small><h3>Software</h3>
+          <p>Sistemas operativos, aplicaciones, servicios de red y protocolos que coordinan la comunicación.</p></div>
+        </article>
+        <article>
+          <span>C</span>
+          <div><small>CAPA 03</small><h3>Conexiones</h3>
+          <p>Par trenzado, fibra óptica y enlaces inalámbricos como Wi‑Fi, además de otros medios de transmisión.</p></div>
+        </article>
+      </div>
+
+      <div class="devices-wrap">
+        <div class="devices-intro reveal">
+          <span class="kicker">DISPOSITIVOS DE INTERCONEXIÓN</span>
+          <h3>Cada dispositivo toma una decisión diferente.</h3>
+          <p>
+            Algunos repiten señales, otros seleccionan destinos, conectan redes
+            distintas o filtran tráfico según reglas de seguridad.
+          </p>
+        </div>
+
+        <div class="device-grid">
+          <article class="device-card reveal">
+            <div class="device-icon hub-icon"><i></i><i></i><i></i><i></i><i></i></div>
+            <div><span>HUB / CONCENTRADOR</span><h4>Replica</h4>
+            <p>Recibe información y la envía a todos sus puertos. Es un enfoque simple y poco selectivo.</p>
+            <small>Guía 2</small></div>
+          </article>
+
+          <article class="device-card reveal">
+            <div class="device-icon bridge-icon"><i></i><b></b><i></i></div>
+            <div><span>BRIDGE / PUENTE</span><h4>Segmenta</h4>
+            <p>Interconecta segmentos de red y decide qué tramas deben cruzar de un segmento a otro.</p>
+            <small>Complemento técnico · Cisco</small></div>
+          </article>
+
+          <article class="device-card reveal">
+            <div class="device-icon gateway-icon"><i>⇄</i></div>
+            <div><span>GATEWAY / COMPUERTA</span><h4>Traduce</h4>
+            <p>Conecta redes diferentes y puede traducir comunicaciones entre protocolos o entornos distintos.</p>
+            <small>Guía 2 + Cisco</small></div>
+          </article>
+
+          <article class="device-card reveal">
+            <div class="device-icon router-icon"><i></i><i></i><i></i></div>
+            <div><span>ROUTER / ENRUTADOR</span><h4>Encamina</h4>
+            <p>Conecta redes diferentes y dirige paquetes hacia su destino; por ejemplo, una LAN con Internet.</p>
+            <small>Guía 2</small></div>
+          </article>
+
+          <article class="device-card reveal">
+            <div class="device-icon firewall-icon"><i></i></div>
+            <div><span>FIREWALL / CORTAFUEGO</span><h4>Filtra</h4>
+            <p>Supervisa tráfico entrante y saliente y permite o bloquea comunicaciones según reglas de seguridad.</p>
+            <small>Complemento técnico · Cisco</small></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="address-grid">
+        <article class="address-card reveal">
+          <div class="address-head">
+            <span class="kicker">ANATOMÍA DE UNA DIRECCIÓN WEB</span>
+            <span class="tiny-label">URL / URI</span>
+          </div>
+          <div class="url-demo" aria-label="Ejemplo de una URL">
+            <span class="scheme">https://</span><span class="host">www.ejemplo.edu</span><span class="path">/redes/tema</span><span class="query">?unidad=1</span><span class="fragment">#protocolos</span>
+          </div>
+          <div class="legend">
+            <span><i class="scheme-bg"></i>Esquema</span>
+            <span><i class="host-bg"></i>Dominio / host</span>
+            <span><i class="path-bg"></i>Ruta</span>
+            <span><i class="query-bg"></i>Consulta</span>
+            <span><i class="fragment-bg"></i>Fragmento</span>
+          </div>
+          <p>
+            Una dirección web puede incluir esquema, autoridad o dominio, ruta,
+            consulta y fragmento. No todos los componentes son obligatorios.
+          </p>
+          <small>Fuente complementaria: MDN Web Docs</small>
+        </article>
+
+        <article class="address-card email-card reveal">
+          <div class="address-head">
+            <span class="kicker">FORMATO TÍPICO DE CORREO</span>
+            <span class="tiny-label">RFC 5322</span>
+          </div>
+          <div class="email-demo">
+            <span class="local">nombre.apellido</span><b>@</b><span class="domain">universidad.edu</span>
+          </div>
+          <div class="email-breakdown">
+            <div><small>PARTE LOCAL</small><b>nombre.apellido</b></div>
+            <div><small>SEPARADOR</small><b>@</b></div>
+            <div><small>DOMINIO</small><b>universidad.edu</b></div>
+          </div>
+          <p>
+            El formato general de una dirección de correo es
+            <code>parte-local@dominio</code>.
+          </p>
+          <small>Fuente complementaria: RFC 5322 · RFC Editor</small>
+        </article>
+      </div>
+
+      <p class="editor-line">Responsable de la edición: <strong data-responsible>Moisés de Jesús Pérez Pinto</strong></p>
+    </section>
+
+
+    <section class="section unit2-section" id="unidad2">
+      <div class="unit2-spotlight reveal" aria-hidden="true">
+        <span class="spotlight-line line-a"></span>
+        <span class="spotlight-line line-b"></span>
+        <span class="spotlight-dot dot-a"></span>
+        <span class="spotlight-dot dot-b"></span>
+      </div>
+
+      <div class="unit2-hero reveal">
+        <div class="unit2-hero-copy">
+          <span class="kicker">05 · UNIDAD TEMÁTICA 2</span>
+          <div class="unit2-badge"><i></i> COMUNICACIÓN + APRENDIZAJE</div>
+          <h2>Sincrónica <span>ahora.</span><br>Asincrónica <em>a tu ritmo.</em></h2>
+          <p>
+            Dos formas de comunicación telemática que se complementan para crear experiencias
+            educativas más flexibles, participativas y colaborativas.
+          </p>
+          <div class="unit2-hero-actions">
+            <a class="btn btn-primary" href="#unidad2-video">Ver exposición <span>↘</span></a>
+            <a class="btn btn-ghost" href="#unidad2-reflexion">Mi reflexión</a>
+          </div>
+        </div>
+
+        <div class="comm-visual" aria-label="Comparación visual entre comunicación sincrónica y asincrónica">
+          <div class="comm-core"><span>TELEMÁTICA</span><b>EDU</b></div>
+          <div class="comm-orbit sync-orbit">
+            <span class="comm-node node-chat">CHAT</span>
+            <span class="comm-node node-video">VIDEO</span>
+            <span class="comm-node node-audio">AUDIO</span>
+          </div>
+          <div class="comm-orbit async-orbit">
+            <span class="comm-node node-mail">MAIL</span>
+            <span class="comm-node node-forum">FORO</span>
+            <span class="comm-node node-list">LISTA</span>
+          </div>
+          <div class="comm-label label-sync"><small>01</small><b>SINCRÓNICA</b><span>tiempo real</span></div>
+          <div class="comm-label label-async"><small>02</small><b>ASINCRÓNICA</b><span>tiempo diferido</span></div>
+        </div>
+      </div>
+
+      <div class="unit2-compare reveal">
+        <article class="compare-panel sync-panel">
+          <div class="compare-top"><span>01</span><i class="live-pulse"></i></div>
+          <small>COMUNICACIÓN SINCRÓNICA</small>
+          <h3>Coincidimos en el tiempo.</h3>
+          <p>La interacción ocurre en tiempo real y permite respuesta inmediata entre los participantes.</p>
+          <div class="compare-tools">
+            <span><b>IRC / Chat</b><small>mensajería inmediata</small></span>
+            <span><b>Videoconferencia</b><small>audio + imagen en vivo</small></span>
+            <span><b>Audioconferencia</b><small>voz en tiempo real</small></span>
+            <span><b>MUD</b><small>entorno multiusuario</small></span>
+          </div>
+          <footer><span>+ inmediatez</span><span>+ interacción directa</span><span>− requiere horario común</span></footer>
+        </article>
+
+        <div class="compare-center" aria-hidden="true">
+          <span>VS</span>
+          <i></i>
+          <b>SE COMPLEMENTAN</b>
+        </div>
+
+        <article class="compare-panel async-panel">
+          <div class="compare-top"><span>02</span><i>⌁</i></div>
+          <small>COMUNICACIÓN ASINCRÓNICA</small>
+          <h3>Participamos en momentos distintos.</h3>
+          <p>El mensaje permanece disponible para ser consultado y respondido posteriormente.</p>
+          <div class="compare-tools">
+            <span><b>Correo</b><small>mensajes y archivos</small></span>
+            <span><b>Listas</b><small>distribución grupal</small></span>
+            <span><b>Noticias</b><small>publicación y consulta</small></span>
+            <span><b>Foros</b><small>debate reflexivo</small></span>
+          </div>
+          <footer><span>+ flexibilidad</span><span>+ reflexión</span><span>− respuesta no inmediata</span></footer>
+        </article>
+      </div>
+
+      <div class="unit2-toolkit">
+        <div class="unit2-subheading reveal">
+          <span class="kicker">ECOSISTEMA EDUCATIVO</span>
+          <h3>Herramientas, medios y servicios<br><em>con finalidad pedagógica.</em></h3>
+          <p>La tecnología adquiere valor educativo cuando responde a una intención didáctica concreta.</p>
+        </div>
+
+        <div class="toolkit-grid">
+          <article class="toolkit-card reveal"><span class="toolkit-icon">@</span><small>ASINCRÓNICA</small><h4>Correo electrónico</h4><p>Orientaciones, entrega de documentos, retroalimentación y comunicación individual.</p></article>
+          <article class="toolkit-card reveal"><span class="toolkit-icon">#</span><small>APRENDIZAJE</small><h4>Foros</h4><p>Debate argumentado, participación diferida y construcción colectiva del conocimiento.</p></article>
+          <article class="toolkit-card reveal"><span class="toolkit-icon">⌁</span><small>SINCRÓNICA</small><h4>Chat / IRC</h4><p>Interacción textual inmediata para tutorías, dudas, coordinación y trabajo colaborativo.</p></article>
+          <article class="toolkit-card reveal"><span class="toolkit-icon">◉</span><small>AUDIOVISUAL</small><h4>Videoconferencia</h4><p>Clases, asesorías y reuniones en tiempo real mediante cámara, micrófono, audio e Internet.</p></article>
+          <article class="toolkit-card reveal"><span class="toolkit-icon">WWW</span><small>TELEMÁTICA</small><h4>Web y portales</h4><p>Acceso a recursos, contenidos, plataformas, buscadores y espacios de publicación.</p></article>
+          <article class="toolkit-card reveal"><span class="toolkit-icon">▤</span><small>RECURSOS</small><h4>Bibliotecas digitales</h4><p>Consulta de libros, artículos, materiales académicos y centros de recursos especializados.</p></article>
+        </div>
+      </div>
+
+      <div class="learning-flow reveal">
+        <div class="flow-intro">
+          <span class="kicker">COMUNIDAD DE APRENDIZAJE</span>
+          <h3>La comunicación se convierte en conocimiento.</h3>
+          <p>Una comunidad virtual integra personas, herramientas y recursos alrededor de objetivos educativos comunes.</p>
+        </div>
+        <div class="flow-track">
+          <article><span>01</span><b>INTERACCIÓN</b><small>Chat · Video · Correo</small></article>
+          <i>→</i>
+          <article><span>02</span><b>COLABORACIÓN</b><small>Foros · Grupos · Recursos</small></article>
+          <i>→</i>
+          <article><span>03</span><b>PARTICIPACIÓN</b><small>Ideas · Debate · Producción</small></article>
+          <i>→</i>
+          <article><span>04</span><b>CONOCIMIENTO</b><small>Aprendizaje compartido</small></article>
+        </div>
+      </div>
+
+      <div class="media-band reveal">
+        <div><small>MEDIOS ELECTRÓNICOS</small><b>Dispositivos + información digital</b></div>
+        <span>+</span>
+        <div><small>MEDIOS TELEMÁTICOS</small><b>Informática + telecomunicaciones</b></div>
+        <span>+</span>
+        <div><small>MEDIOS AUDIOVISUALES</small><b>Imagen + sonido</b></div>
+        <span>=</span>
+        <div class="media-result"><small>ENTORNO EDUCATIVO</small><b>Comunicación multimodal</b></div>
+      </div>
+
+      <div class="software-strip reveal">
+        <div class="software-title"><span class="kicker">SOFTWARE DE COMUNICACIÓN</span><h3>De Messenger y Skype a los entornos actuales.</h3></div>
+        <div class="software-pills"><span>Messenger</span><span>Skype</span><span>Zoom</span><span>Teams</span><span>Google Meet</span><span>WhatsApp</span><span>Telegram</span></div>
+      </div>
+
+      <div class="reflection-card glass reveal" id="unidad2-reflexion">
+        <div class="reflection-mark">“</div>
+        <div>
+          <span class="kicker">MI REFLEXIÓN</span>
+          <h3>La herramienta no reemplaza la pedagogía.</h3>
+          <p>
+            Desde mi punto de vista, el verdadero valor de estas tecnologías está en cómo se integran
+            al proceso de enseñanza y aprendizaje. La comunicación sincrónica aporta cercanía e inmediatez;
+            la asincrónica aporta flexibilidad y tiempo para reflexionar. Combinarlas permite construir
+            experiencias educativas más participativas, autónomas y colaborativas.
+          </p>
+        </div>
+        <div class="reflection-sign"><small>MOISÉS DE JESÚS</small><b>PÉREZ PINTO</b><span>Telemática Educativa</span></div>
+      </div>
+
+      <div class="unit2-grid unit2-video-grid" id="unidad2-video">
+        <article class="video-card glass reveal">
+          <div class="video-head">
+            <div>
+              <span class="kicker">VIDEO DE LA EXPOSICIÓN</span>
+              <h3 class="video-title">Herramientas de comunicación sincrónica y asincrónica</h3>
+            </div>
+            <span class="status"><i></i> UNIDAD 2</span>
+          </div>
+
+          <div class="video-shell">
+            <div class="video-frame" id="videoFrame">
+              <video class="unit2-local-video" controls preload="metadata" playsinline poster="assets/unidad2-poster.jpg">
+                <source src="assets/unidad2-exposicion.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video. Puedes utilizar el botón “Ver en YouTube”.
+              </video>
+            </div>
+          </div>
+
+          <div class="video-details">
+            <div class="video-identity">
+              <span class="video-avatar">MP</span>
+              <div>
+                <strong>Moisés de Jesús Pérez Pinto</strong>
+                <small>Telemática Educativa · Profesor: Manuel Rodríguez</small>
+              </div>
+            </div>
+            <a class="video-link video-link-primary" id="videoLink" href="https://youtu.be/8LzHefBdqC0" target="_blank" rel="noreferrer">
+              <span class="yt-mark">▶</span>
+              Ver en YouTube
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="video-note">
+            <span>Reproducción integrada</span>
+            <b>El video se reproduce directamente desde esta página. También puedes abrirlo en YouTube.</b>
+          </div>
+        </article>
+
+        <article class="unit2-summary reveal">
+          <span class="kicker">RESUMEN DEL VIDEO</span>
+          <h3>Herramientas de comunicación desde la Telemática</h3>
+          <p>
+            El video presenta las herramientas de comunicación sincrónica y asincrónica desde
+            la perspectiva de la telemática y su aplicación educativa. La comunicación sincrónica
+            permite la interacción en tiempo real mediante recursos como chat, audioconferencia
+            y videoconferencia; mientras que la comunicación asincrónica posibilita la participación
+            en diferentes momentos mediante correo electrónico, listas de distribución, noticias y foros.
+          </p>
+          <p>
+            También se analizan las comunidades virtuales de aprendizaje, los medios electrónicos,
+            telemáticos y audiovisuales, los portales web, buscadores, bibliotecas y centros de recursos,
+            así como Internet como instrumento, medio de expresión y espacio para aplicaciones con
+            finalidad pedagógica. Finalmente, se consideran programas de comunicación como Messenger,
+            Skype y otras herramientas actuales, destacando la importancia de combinar recursos
+            sincrónicos y asincrónicos de acuerdo con los objetivos educativos.
+          </p>
+          <div class="unit2-tags">
+            <span>Chat</span><span>Correo</span><span>Foros</span><span>Videoconferencia</span><span>Internet</span><span>Comunidades de aprendizaje</span>
+          </div>
+          <div class="unit2-meta">
+            <div><small>PARTICIPANTE</small><b>Moisés de Jesús Pérez Pinto</b></div>
+            <div><small>ASIGNATURA</small><b>Telemática Educativa</b></div>
+            <div><small>PROFESOR</small><b>Manuel Rodríguez</b></div>
+            <div><small>ENTREGA</small><b>04 · OCT</b></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="editor-line">Responsable de la edición: <strong data-responsible>Moisés de Jesús Pérez Pinto</strong></p>
+    </section>
+
+    <section class="section bio-section" id="biografia">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">06 · BIOGRAFÍA</span>
+          <h2>Responsable del proyecto.</h2>
+        </div>
+        <p>
+          Esta pestaña cumple el requisito de identificar a la persona responsable
+          de la creación, edición y organización del sitio.
+        </p>
+      </div>
+
+      <div class="bio-card glass reveal">
+        <div class="bio-avatar" id="bioAvatar">TN</div>
+        <div class="bio-main">
+          <span class="kicker">ESTUDIANTE / AUTOR</span>
+          <h3 data-responsible>Moisés de Jesús Pérez Pinto</h3>
+          <p id="bioText">
+            Estudiante interesado/a en el uso de las tecnologías digitales y en comprender
+            cómo las redes telemáticas permiten comunicar, compartir información y crear
+            nuevos espacios de interacción y aprendizaje.
+          </p>
+          <div class="bio-meta">
+            <span><small>PROGRAMA / CARRERA</small><b id="programText">Especialización en Telemática</b></span>
+            <span><small>ASIGNATURA</small><b>Telemática Educativa</b></span>
+            <span><small>PROFESOR</small><b>Manuel Rodríguez</b></span>
+            <span><small>ROL</small><b>Diseño · Investigación · Edición</b></span>
+          </div>
+        </div>
+        <div class="bio-sign">NEXUS<br>UT-01</div>
+      </div>
+
+      <p class="editor-line">Responsable de la edición: <strong data-responsible>Moisés de Jesús Pérez Pinto</strong></p>
+    </section>
+
+    <section class="section references" id="referencias">
+      <div class="section-heading reveal">
+        <div>
+          <span class="kicker">07 · REFERENCIAS</span>
+          <h2>Fuentes académicas y técnicas.</h2>
+        </div>
+        <p>
+          El contenido distingue el material base suministrado en la unidad
+          de las fuentes técnicas utilizadas para completar conceptos no desarrollados allí.
+        </p>
+      </div>
+
+      <div class="reference-list">
+        <article class="reference-item primary reveal">
+          <span>01</span>
+          <div>
+            <small>MATERIAL BASE · ARTÍCULO ACADÉMICO</small>
+            <p>
+              Clares López, J. (2000). <em>Telemática, enseñanza y ambientes virtuales colaborativos</em>.
+              Comunicar, 14, 191–199.
+            </p>
+          </div>
+        </article>
+
+        <article class="reference-item primary reveal">
+          <span>02</span>
+          <div>
+            <small>MATERIAL BASE · GUÍA DE LA UNIDAD</small>
+            <p>
+              <em>Redes informáticas y redes telemáticas</em>. (s. f.). Guía 2.
+              Material didáctico suministrado para la Unidad Temática 1.
+            </p>
+          </div>
+        </article>
+
+        <article class="reference-item reveal">
+          <span>03</span>
+          <div>
+            <small>FUENTE COMPLEMENTARIA · REDES</small>
+            <p>
+              Cisco. (2026). <em>What is a network gateway?</em> y
+              <em>What is a firewall?</em>. Cisco Learning.
+            </p>
+            <a href="https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-network-gateway.html" target="_blank" rel="noreferrer">Consultar fuente ↗</a>
+          </div>
+        </article>
+
+        <article class="reference-item reveal">
+          <span>04</span>
+          <div>
+            <small>FUENTE COMPLEMENTARIA · URL</small>
+            <p>
+              MDN Web Docs. (s. f.). <em>¿Qué es una URL?</em> Mozilla.
+              Consultado el 20 de septiembre de 2026.
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL" target="_blank" rel="noreferrer">Consultar fuente ↗</a>
+          </div>
+        </article>
+
+        <article class="reference-item reveal">
+          <span>05</span>
+          <div>
+            <small>FUENTE COMPLEMENTARIA · CORREO ELECTRÓNICO</small>
+            <p>
+              Resnick, P. (2008). <em>RFC 5322: Internet Message Format</em>.
+              RFC Editor / Internet Engineering Task Force.
+            </p>
+            <a href="https://www.rfc-editor.org/info/rfc5322/" target="_blank" rel="noreferrer">Consultar fuente ↗</a>
+          </div>
+        </article>
+
+        <article class="reference-item reveal">
+          <span>06</span>
+          <div>
+            <small>FUENTE COMPLEMENTARIA · INTERNET2</small>
+            <p>
+              Internet2. (s. f.). <em>Network</em>. Infraestructura de red para
+              investigación y educación.
+            </p>
+            <a href="https://internet2.edu/network/" target="_blank" rel="noreferrer">Consultar fuente ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="academic-note reveal">
+        <strong>Nota de integridad académica.</strong>
+        <p>
+          Los textos de este sitio están redactados como síntesis explicativas.
+          Las ideas provenientes del material de la unidad y de fuentes complementarias
+          se identifican mediante atribuciones y referencias bibliográficas.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">NEXUS <span>/</span> TELEMATICS</div>
+    <p>Proyecto académico · Unidades Temáticas 1 y 2 · <span data-responsible>Moisés de Jesús Pérez Pinto</span></p>
+    <a href="#inicio" id="backToTop">VOLVER ARRIBA ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
